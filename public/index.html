@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Rock Scissors Paper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body>
+
+    <div class="form-registration">
+        <form>
+            <select class="player-selection">
+                <option value="1">Player 1</option>
+                <option value="2">Player 2</option>
+            </select>
+            <input class="chosen-nickname" placeholder="Please select a nickname"/>
+            <button class="submit-button" type="submit">Join the game!</button>
+        </form>
+    </div>
+
+    <div class="players">
+        <div class="player-wrapper">
+            <div class="playerOne-title">Player 1:</div>
+            <div class="playerOne-name"></div>
+        </div>
+        <div class="player-wrapper">
+            <div class="playerTwo-title">Player 2:</div>
+            <div class="playerTwo-name"></div>
+        </div>
+    </div>
+
+    <div class="icon-wrapper">
+        <div id="rock" class="rock-icon icon-div">
+                <i class="far fa-hand-rock fa-10x"></i>
+        </div>
+        <div id="scissors" class="scissors-icon icon-div">
+                <i class="far fa-hand-scissors fa-10x"></i>
+        </div>
+        <div id="paper" class="paper-icon icon-div">
+                <i class="far fa-hand-paper fa-10x"></i>
+        </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="clientSideJavascript.js"> </script>
+</body>
+</html>

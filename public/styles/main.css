@@ -1,0 +1,36 @@
+
+#mainTitle{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.icon-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display:flex;
+    justify-content: center;
+}
+
+.players{
+   text-align: center;
+   
+}
+
+.playerOne-title{
+    color: blueviolet
+}
+.playerOne-name{
+    color: blueviolet
+}
+
+.playerTwo-title {
+    color: rgb(255, 0, 255)
+}
+
+.playerTwo-name {
+    color: rgb(255, 0, 255)
+}

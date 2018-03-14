@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
     var playerId = "0";
 
@@ -23,8 +24,8 @@ $(document).ready(function() {
         };
 
         $.ajax({
-            type: "POST",
-            url: "register-user",
+            type: "POST", //its a POST type meaning Creates a new resource.
+            url: "register-user", //this looks at http://localhost:3000/register-user. This is a CREATED method in app.js
             data: data,
         }).done(function(response) {
             playerId = playerIdDropdown;
@@ -80,6 +81,7 @@ $(document).ready(function() {
                     $("body").css("background-color", "green");
                 } else if(response.winner === 1 && playerId === "2") {
                     $("body").css("background-color", "red");
+
                 }
 
                 if (response.winner === 2 && playerId === "2") {
